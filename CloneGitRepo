@@ -1,0 +1,11 @@
+node{
+    stage('Clone repository'){
+        git branch: 'main', url: 'https://github.com/EricTijsen/DevOpsTraining-'      
+    }
+    stage('Working directory'){
+        sh "pwd"
+    }
+    stage('List contents'){
+        sh "ls -ltr"
+    }
+}
